@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f 
+spawn ssh USERNAME@SERVER.DOMAIN
+expect "Password:"
+send "PASSWORD\r"
+send "sudo su -\r"
+send "echo -ne SERVER\r"
+send "export PROMPT_COMMAND='echo -ne \"\\033]0;SERVER\\007\"'\r"
+interact

@@ -1,0 +1,4 @@
+# ssh login automatic for mac osx.
+
+#Requires: osascript, expect and ssh client.
+#Requires2: iTerm, but it works well with Terminal default.
